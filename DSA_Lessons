@@ -211,6 +211,3 @@
 3. Write a program to find the number of ways to reach the top of a staircase with `n` steps, where you can take either 1 or 2 steps at a time.
 4. Solve the "minimum number of coins" problem using dynamic programming.
 5. Write a program to generate all combinations of a given set of numbers.
-
----
-

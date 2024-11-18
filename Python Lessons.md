@@ -52,7 +52,7 @@
 12. Define a class `Person` with a method to calculate BMI (Body Mass Index) using weight and height.
 13. Create a class `Library` that allows users to add books, borrow books, and return books.
 14. Implement a polymorphism example by defining a method `draw` in multiple classes like `Circle`, `Rectangle`, and `Triangle`.
-15. Write a class `Queue` to implement a basic queue with methods for enqueue, dequeue, and checking if the queue is empty.
+15. Create 4 Methods Called Math With Different Paramaters and Implement Them .
 
 ---
 

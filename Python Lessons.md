@@ -26,7 +26,7 @@
 
 ---
 
-## Classes and Objects
+## OOPS
 - Defining Classes
 - Attributes and Methods
 - Constructor (`__init__` method)

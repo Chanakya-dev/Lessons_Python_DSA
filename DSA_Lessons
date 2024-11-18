@@ -212,5 +212,233 @@
 4. Solve the "minimum number of coins" problem using dynamic programming.
 5. Write a program to generate all combinations of a given set of numbers.
 
+Here is the markdown (.md) format of the DSA Concepts and Problems document:
+
+```markdown
+# DSA Concepts and Problems
+
+## 1. Arrays
+
+### Basic:
+1. Write a program to find the largest element in an array.
+2. Reverse an array in place.
+3. Find the sum of all elements in an array.
+4. Write a program to check if an array is sorted.
+5. Count the occurrences of a given element in an array.
+
+### Intermediate:
+1. Given an array, find the two numbers that add up to a given target sum.
+2. Rotate an array by `k` positions.
+3. Write a program to find the missing number in a sorted array of `n-1` numbers.
+4. Remove duplicates from a sorted array.
+5. Find the first non-repeating element in an array.
+
+### Advanced:
+1. Find the contiguous subarray with the maximum sum (Kadane’s Algorithm).
+2. Given an array, implement binary search to find an element.
+3. Find the intersection of two arrays.
+4. Find the longest subsequence of consecutive numbers in an unsorted array.
+5. Implement a program to find the majority element in an array.
+
 ---
 
+## 2. Linked List
+
+### Basic:
+1. Reverse a singly linked list.
+2. Detect if a linked list has a cycle.
+3. Find the middle element of a linked list.
+4. Delete a node from a linked list.
+5. Print all elements of a linked list.
+
+### Intermediate:
+1. Merge two sorted linked lists into one sorted linked list.
+2. Remove the nth node from the end of a linked list.
+3. Find the intersection point of two linked lists.
+4. Implement a function to check if a linked list is palindrome.
+5. Sort a linked list using merge sort.
+
+### Advanced:
+1. Flatten a multi-level doubly linked list.
+2. Add two numbers represented by linked lists.
+3. Implement a function to detect the start of a cycle in a linked list.
+4. Reverse a portion of a linked list between `m` and `n`.
+5. Merge `k` sorted linked lists.
+
+---
+
+## 3. Stacks and Queues
+
+### Basic:
+1. Implement a stack using an array.
+2. Implement a queue using two stacks.
+3. Write a program to evaluate a postfix expression.
+4. Check for balanced parentheses in an expression.
+5. Implement a circular queue.
+
+### Intermediate:
+1. Implement a stack with constant time retrieval of the minimum element.
+2. Design a stack that supports `push`, `pop`, `top`, and `getMin` operations in constant time.
+3. Implement a priority queue using a heap.
+4. Implement a queue using a singly linked list.
+5. Implement a stack using two queues.
+
+### Advanced:
+1. Design a stack that supports push, pop, and retrieval of the maximum element in constant time.
+2. Implement a deque (double-ended queue) from scratch.
+3. Implement a sliding window maximum using a deque.
+4. Write a program to sort a stack using another stack.
+5. Design a data structure that supports insert, delete, and get the median element in constant time.
+
+---
+
+## 4. Trees
+
+### Basic:
+1. Find the height of a binary tree.
+2. Perform an inorder traversal of a binary tree.
+3. Write a program to check if a binary tree is balanced.
+4. Find the maximum element in a binary tree.
+5. Count the number of leaf nodes in a binary tree.
+
+### Intermediate:
+1. Perform a level-order traversal (BFS) of a binary tree.
+2. Find the lowest common ancestor of two nodes in a binary tree.
+3. Implement preorder and postorder traversal of a binary tree.
+4. Write a program to check if a binary tree is a binary search tree (BST).
+5. Given a binary tree, write a program to convert it into its mirror image.
+
+### Advanced:
+1. Find the diameter of a binary tree.
+2. Implement a program to find the kth smallest element in a binary search tree (BST).
+3. Write a program to flatten a binary tree to a linked list.
+4. Perform a depth-first search (DFS) traversal for a binary tree.
+5. Write a program to check if a binary tree is a complete binary tree.
+
+---
+
+## 5. Graphs
+
+### Basic:
+1. Implement Depth-First Search (DFS) for a graph.
+2. Implement Breadth-First Search (BFS) for a graph.
+3. Write a program to find the degree of a node in a graph.
+4. Write a program to find the shortest path in an unweighted graph (BFS).
+5. Implement a graph traversal using DFS for a directed graph.
+
+### Intermediate:
+1. Detect a cycle in an undirected graph using DFS.
+2. Implement Dijkstra’s algorithm to find the shortest path in a weighted graph.
+3. Find strongly connected components (SCC) in a directed graph using Kosaraju’s algorithm.
+4. Find the topological sort of a directed acyclic graph (DAG).
+5. Write a program to check if a graph is bipartite.
+
+### Advanced:
+1. Implement the Bellman-Ford algorithm for shortest paths in a graph with negative weights.
+2. Implement Kruskal’s algorithm for finding the Minimum Spanning Tree (MST).
+3. Write a program to detect negative cycles in a graph using the Bellman-Ford algorithm.
+4. Implement Floyd-Warshall algorithm for finding the shortest paths between all pairs of vertices.
+5. Write a program to solve the traveling salesman problem using dynamic programming.
+
+---
+
+## 6. Hashing
+
+### Basic:
+1. Implement a hash map (hash table) from scratch.
+2. Count the frequency of elements in an array using a hash map.
+3. Find the first non-repeating character in a string using a hash map.
+4. Find the intersection of two arrays using hash sets.
+5. Write a program to check if two strings are anagrams using a hash map.
+
+### Intermediate:
+1. Group anagrams from a list of strings using a hash map.
+2. Find the longest subarray with sum 0 using a hash map.
+3. Check if two arrays have the same elements using a hash map.
+4. Find the longest consecutive subsequence in an unsorted array using a hash set.
+5. Solve the problem of finding the number of subarrays with a given sum using a hash map.
+
+### Advanced:
+1. Solve the problem of finding the duplicate number in an array using a hash set.
+2. Find all pairs in an array whose sum is divisible by `k` using a hash map.
+3. Write a program to check if a pair with a given sum exists in an unsorted array.
+4. Find the subarrays that sum to a given target using a hash map.
+5. Solve the problem of finding the longest substring without repeating characters using a hash set.
+
+---
+
+## 7. Algorithms
+
+### Sorting Algorithms:
+1. Implement the bubble sort algorithm.
+2. Implement the insertion sort algorithm.
+3. Implement the merge sort algorithm.
+4. Implement the quicksort algorithm.
+5. Implement the heap sort algorithm.
+
+### Searching Algorithms:
+1. Implement the binary search algorithm.
+2. Write an algorithm to find the first occurrence of an element in a sorted array.
+3. Write an algorithm to find the last occurrence of an element in a sorted array.
+4. Implement an algorithm to perform a linear search in an unsorted array.
+5. Implement an algorithm to search for an element in a rotated sorted array.
+
+### Dynamic Programming:
+1. Solve the Fibonacci sequence using dynamic programming.
+2. Implement the 0/1 knapsack problem using dynamic programming.
+3. Find the longest common subsequence (LCS) of two strings.
+4. Solve the matrix chain multiplication problem using dynamic programming.
+5. Implement the coin change problem using dynamic programming.
+
+### Greedy Algorithms:
+1. Solve the activity selection problem using a greedy approach.
+2. Implement the fractional knapsack problem using a greedy approach.
+3. Solve the job sequencing problem using a greedy approach.
+4. Find the minimum number of coins required to make change using a greedy approach.
+5. Solve the Huffman coding problem using a greedy approach.
+
+### Backtracking Algorithms:
+1. Solve the N-Queens problem using backtracking.
+2. Solve the Sudoku puzzle using backtracking.
+3. Solve the subset sum problem using backtracking.
+4. Implement the rat in a maze problem using backtracking.
+5. Solve the combination sum problem using backtracking.
+
+---
+
+## 8. Logical Algorithms
+
+### Basic:
+1. Find the missing number in a given range from `1` to `n`.
+2. Write a program to check if a given number is a power of 2.
+3. Write a program to calculate the greatest common divisor (GCD) of two numbers.
+4. Write a program to check if a number is a palindrome.
+5. Write a program to reverse a given string without using extra space.
+
+### Intermediate:
+1. Find all divisors of a given number.
+2. Find the number of set bits in a number (also called Hamming weight).
+3. Write a program to generate all prime numbers up to a given number using the Sieve of Eratosthenes.
+4. Implement the Euclidean algorithm for finding the GCD of two numbers.
+5. Write a program to check if a string has balanced parentheses.
+
+### Advanced:
+1. Write a program to find the first `n` Fibonacci numbers using memoization.
+2. Find the longest palindromic subsequence in a given string.
+3. Write a program to find the number of ways to reach the top of a staircase with `n` steps, where you can take either 1 or 2 steps at a time.
+4. Solve the "minimum number of coins" problem using dynamic programming.
+5. Write a program to generate all combinations ofThe markdown document for "DSA Concepts and Problems" you have is well-structured, covering a wide array of topics from basic to advanced levels in different areas of Data Structures and Algorithms. Each section provides a variety of problems for practice, which are categorized into three levels: Basic, Intermediate, and Advanced. Below is a brief summary of the document structure and key topics:
+
+### DSA Concepts and Problems Overview:
+1. **Arrays**: Problems involving finding elements, reversing arrays, detecting sorted arrays, and advanced challenges like Kadane's Algorithm for maximum subarray sum.
+2. **Linked List**: Tasks related to reversal, cycle detection, and merging sorted lists, with advanced problems like flattening multi-level linked lists.
+3. **Stacks and Queues**: Problems like implementing stacks/queues with different approaches, checking for balanced parentheses, and using stacks for sorting.
+4. **Trees**: Binary tree problems such as traversal, finding the height, balancing checks, and more advanced tasks like calculating the tree's diameter.
+5. **Graphs**: Basic graph traversals (DFS, BFS), shortest paths, and advanced algorithms like Dijkstra’s, Bellman-Ford, and solving the traveling salesman problem.
+6. **Hashing**: Basic operations like implementing a hash map and detecting anagrams, to more complex problems like counting subarrays with a given sum.
+7. **Algorithms**: Includes sorting, searching algorithms, dynamic programming problems, and greedy approaches to well-known problems like activity selection and knapsack.
+8. **Logical Algorithms**: Basic number theory, GCD, prime number generation, and advanced dynamic programming problems like Fibonacci sequences and palindromic subsequences.
+
+This structure allows learners to progressively improve their problem-solving skills by tackling various algorithms and data structures. It's a great resource for both beginners and more advanced learners preparing for coding interviews or competitions.
+
+If you're looking to dive deeper into any specific topic or need guidance on a particular problem, feel free to ask!

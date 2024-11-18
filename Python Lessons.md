@@ -57,7 +57,6 @@
 ---
 
 ## Data Structures
-- Arrays
 - Strings
 - Lists
 - Sets

@@ -1,6 +1,31 @@
-# DSA Concepts and Problems
+# Data Structures and Algorithms Problem Set
 
-## 1. Arrays
+## 1. Strings
+
+### Basic:
+1. Write a program to reverse a string.
+2. Write a program to check if a string is a palindrome.
+3. Write a program to count the occurrence of a character in a string.
+4. Write a program to find the first non-repeating character in a string.
+5. Write a program to check if two strings are anagrams of each other.
+
+### Intermediate:
+1. Write a program to perform string compression.
+2. Find the longest common prefix in a list of strings.
+3. Write a program to check if a string contains all unique characters.
+4. Write a program to replace all spaces in a string with `%20`.
+5. Write a program to find the length of the longest substring without repeating characters.
+
+### Advanced:
+1. Write a program to implement regular expression matching.
+2. Implement a program to check if a string is a rotation of another string.
+3. Find the longest palindromic substring in a string.
+4. Implement a program for string matching using the Knuth-Morris-Pratt (KMP) algorithm.
+5. Write a program to implement the Rabin-Karp algorithm for string matching.
+
+---
+
+## 2. Arrays
 
 ### Basic:
 1. Write a program to find the largest element in an array.
@@ -25,7 +50,7 @@
 
 ---
 
-## 2. Linked List
+## 3. Linked List
 
 ### Basic:
 1. Reverse a singly linked list.
@@ -50,7 +75,7 @@
 
 ---
 
-## 3. Stacks and Queues
+## 4. Stacks and Queues
 
 ### Basic:
 1. Implement a stack using an array.
@@ -75,7 +100,7 @@
 
 ---
 
-## 4. Trees
+## 5. Trees
 
 ### Basic:
 1. Find the height of a binary tree.
@@ -100,7 +125,7 @@
 
 ---
 
-## 5. Graphs
+## 6. Graphs
 
 ### Basic:
 1. Implement Depth-First Search (DFS) for a graph.
@@ -125,7 +150,7 @@
 
 ---
 
-## 6. Hashing
+## 7. Hashing
 
 ### Basic:
 1. Implement a hash map (hash table) from scratch.
@@ -150,7 +175,7 @@
 
 ---
 
-## 7. Algorithms
+## 8. Algorithms
 
 ### Sorting Algorithms:
 1. Implement the bubble sort algorithm.
@@ -189,25 +214,25 @@
 
 ---
 
-## 8. Logical Algorithms
+## 9. Logical Algorithms
 
 ### Basic:
 1. Find the missing number in a given range from `1` to `n`.
-2. Write a program to check if a given number is a power of 2.
-3. Write a program to calculate the greatest common divisor (GCD) of two numbers.
-4. Write a program to check if a number is a palindrome.
-5. Write a program to reverse a given string without using extra space.
+2. Write a program to check if a given number is a power of two.
+3. Write a program to generate all prime numbers up to a given limit.
+4. Implement a program to compute the greatest common divisor (GCD) of two numbers.
+5. Implement a program to compute the least common multiple (LCM) of two numbers.
 
 ### Intermediate:
-1. Find all divisors of a given number.
-2. Find the number of set bits in a number (also called Hamming weight).
-3. Write a program to generate all prime numbers up to a given number using the Sieve of Eratosthenes.
-4. Implement the Euclidean algorithm for finding the GCD of two numbers.
-5. Write a program to check if a string has balanced parentheses.
+1. Write a program to find the prime factorization of a number.
+2. Write a program to compute the nth Fibonacci number using dynamic programming.
+3. Write a program to find all divisors of a number.
+4. Implement the Sieve of Eratosthenes algorithm to find all primes up to a given number.
+5. Implement an algorithm to calculate the factorial of a number.
 
 ### Advanced:
-1. Write a program to find the first `n` Fibonacci numbers using memoization.
-2. Find the longest palindromic subsequence in a given string.
-3. Write a program to find the number of ways to reach the top of a staircase with `n` steps, where you can take either 1 or 2 steps at a time.
-4. Solve the "minimum number of coins" problem using dynamic programming.
-5. Write a program to generate all combinations of a given set of numbers.
+1. Implement the Euclidean algorithm to find the greatest common divisor (GCD).
+2. Solve the problem of finding the largest prime factor of a number.
+3. Solve the problem of finding the shortest path between two nodes in a graph using Dijkstra’s algorithm.
+4. Implement a program to count the number of set bits in a number.
+5. Implement a program to check if a number is a palindrome.

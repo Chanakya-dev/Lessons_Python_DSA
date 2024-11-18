@@ -52,7 +52,8 @@
 12. Define a class `Person` with a method to calculate BMI (Body Mass Index) using weight and height.
 13. Create a class `Library` that allows users to add books, borrow books, and return books.
 14. Implement a polymorphism example by defining a method `draw` in multiple classes like `Circle`, `Rectangle`, and `Triangle`.
-15. Create 4 Methods Called Math With Different Paramaters and Implement Them .
+15. Design a base class PaymentMethod with a method processPayment(). Create two subclasses CreditCardPayment and PaypalPayment that override processPayment(). Demonstrate
+    polymorphism by calling processPayment() using a base class reference to handle different types of payment methods.
 
 ---
 

@@ -127,13 +127,11 @@ class Node:
         self.data = data
         self.next = None
 
-
+```python
 class LinkedList:
     def _init_(self):
         self.head = None
-
     def insert_at_beginning(self, data):
-        new_node = Node(data)
-        new_node.next = self.head
+        //Fill Out Your Code Here
         self.head = new_node
-
+```

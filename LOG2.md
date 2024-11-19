@@ -120,3 +120,20 @@
 - 3 5 7 9
 > Ouput: 
 - 9 --> 7 --> 5 --> 3 --> None
+
+### 2. Fill Out The Code Snippet
+class Node:
+    def _init_(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+    def _init_(self):
+        self.head = None
+
+    def insert_at_beginning(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+

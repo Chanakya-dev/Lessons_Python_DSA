@@ -136,8 +136,8 @@ class LinkedList:
         self.head = new_node
 ```
 ### 3.What is the time complexity of the insert_at_beginning operation?
-a) O(1)
-b) O(n)
-c) O(log n)
-d) O(n^2)
-Answer: a) O(1)
+- a) O(1)
+- b) O(n)
+- c) O(log n)
+- d) O(n^2)
+**Answer:** a) O(1)

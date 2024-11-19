@@ -108,3 +108,15 @@
 - d) \( O(n^2) \)
 
 **Answer:** a) \( O(1) \)
+
+---
+## LinkedList
+## Insert at Front
+
+### **1. Implement the insert_at_beginning method in a LinkedList class. You are provided with an input sequence of integers. Insert them into the linked list at the beginning, and then return the final linked list.
+
+Input:
+4
+3 5 7 9
+Ouput: 
+9 --> 7 --> 5 --> 3 --> None

@@ -140,4 +140,5 @@ class LinkedList:
 - b) O(n)
 - c) O(log n)
 - d) O(n^2)
+
 **Answer:** a) O(1)

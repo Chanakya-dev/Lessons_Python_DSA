@@ -128,6 +128,7 @@ class Node:
         self.next = None
 
 ```python
+
 class LinkedList:
     def _init_(self):
         self.head = None

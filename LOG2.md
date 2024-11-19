@@ -122,12 +122,11 @@
 - 9 --> 7 --> 5 --> 3 --> None
 
 ### 2. Fill Out The Code Snippet
+```python
 class Node:
     def _init_(self, data):
         self.data = data
         self.next = None
-
-```python
 
 class LinkedList:
     def _init_(self):

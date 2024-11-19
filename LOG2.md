@@ -79,3 +79,32 @@
 - d) All of the above
 
 **Answer:** d) All of the above
+---
+
+### **9. What is the time complexity of searching for an element in a sorted array using binary search?**
+- a) \( O(1) \)
+- b) \( O(\log n) \)
+- c) \( O(n) \)
+- d) \( O(n^2) \)
+
+**Answer:** b) \( O(\log n) \)
+
+---
+
+### **10. What is the time complexity of inserting an element at the beginning of an array?**
+- a) \( O(1) \)
+- b) \( O(\log n) \)
+- c) \( O(n) \)
+- d) \( O(n^2) \)
+
+**Answer:** c) \( O(n) \)
+
+---
+
+### **11. What is the time complexity of deleting an element from the end of an array?**
+- a) \( O(1) \)
+- b) \( O(\log n) \)
+- c) \( O(n) \)
+- d) \( O(n^2) \)
+
+**Answer:** a) \( O(1) \)

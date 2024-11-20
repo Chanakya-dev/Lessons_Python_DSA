@@ -174,8 +174,6 @@ def insert_at_end(self, data):
 
 ---
 
-# Code Completion
-
 ### Question:
 3) Complete the following code for the `insert_at_end` method:
 

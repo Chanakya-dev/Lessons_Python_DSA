@@ -859,4 +859,4 @@ def delete_end(self):
 - **3)** The list loses its circular structure.
 - **4)** The head node is never deleted.
 Correct Answer:
-- **2.** The new head is the next node, and the circular property is maintained.
+- **Answer** **2.** The new head is the next node, and the circular property is maintained.

@@ -541,3 +541,171 @@ def insert_at_end(self, data):
     current.next = new_node
     new_node.prev = current
 ```
+## Delete Node at First
+
+### 1) Delete the First Node in a Doubly Linked List
+- **Problem:** Write a function to delete the first node (head node) in a doubly linked list.
+
+```python
+def delete_first(self):
+    if self.head is None:
+        return  # List is empty
+    if self.head.next is None:  # Only one node in the list
+        self.head = None
+    else:
+        self.head = self.head.next
+        self.head.prev = None
+```
+
+### 2) Delete the Last Node in a Doubly Linked List
+**Problem:** Write a function to delete the last node (tail node) in a doubly linked list.
+```python
+def delete_last(self):
+    if self.head is None:
+        return  # List is empty
+    if self.head.next is None:  # Only one node in the list
+        self.head = None
+    else:
+        self.tail = self.tail.prev
+        self.tail.next = None
+```
+### 3) Fill the Following Code Snippet and Complete The Delete at End Logic
+- **Description:** This function deletes a node at a End in the doubly linked list.
+```python
+def delete_at_end(self):
+    if self.head is None:  # If the list is empty
+        print("List is empty!")
+        return
+
+    if self.head == self.tail:  # If there's only one node
+        self.head = self.tail = None
+    else:
+        #\Write the code to move the tail to the previous node
+        #Write the code to set the new tail's next pointer to None
+        pass
+```
+### 4) Delete Node at a Specific Index
+- **Description:** This function deletes a node at a specific index in the doubly linked list.
+
+```python
+def delete_at_index(self, index):
+    // Fill Out Your Code Here     
+    pass
+```
+### **MCQ 1: Deleting Node at the Front**
+
+**Question:**  
+What happens when you delete the front node of a doubly linked list?
+
+**Options:**
+1. The `head` pointer is set to `None` without modifying the `prev` of the next node.
+2. The `head` pointer is updated to point to the next node, and the new head’s `prev` pointer is set to `None`.
+3. The `tail` pointer is updated to point to the previous node.
+4. The `head` pointer is updated, but the `next` pointer of the old head is not removed.
+
+**Correct Answer:** 2. The `head` pointer is updated to point to the next node, and the new head’s `prev` pointer is set to `None`.
+
+---
+
+### **MCQ 2: Deleting Node at the End**
+
+**Question:**  
+What happens when you delete the node at the end of a doubly linked list?
+
+**Options:**
+1. The `tail` pointer is set to `None` without modifying the `next` pointer of the previous node.
+2. The `tail` pointer is updated to the previous node, and the new tail’s `next` pointer is set to `None`.
+3. The `head` pointer is updated to the previous node.
+4. The node before the last node is removed from the list.
+
+**Correct Answer:** 2. The `tail` pointer is updated to the previous node, and the new tail’s `next` pointer is set to `None`.
+
+---
+
+### **MCQ 3: Deleting Front Node in an Empty List**
+
+**Question:**  
+What happens when you try to delete the front node in an empty doubly linked list?
+
+**Options:**
+1. The function throws an exception.
+2. The `head` and `tail` pointers are both set to `None`.
+3. Nothing happens; the function just returns.
+4. The `head` pointer is set to `None` without changing `tail`.
+
+**Correct Answer:** 1. The function throws an exception.
+
+---
+
+### **MCQ 4: Deleting Node from Front in a Single Node List**
+
+**Question:**  
+What happens when you delete the front node in a doubly linked list that has only one node?
+
+**Options:**
+1. Both `head` and `tail` pointers are set to `None`.
+2. The `head` pointer is set to `None`, but `tail` remains unchanged.
+3. The `tail` pointer is updated to `None`, but `head` remains unchanged.
+4. The list remains unchanged.
+
+**Correct Answer:** 1. Both `head` and `tail` pointers are set to `None`.
+
+---
+
+### **MCQ 5: Edge Case in Deleting at the End**
+
+**Question:**  
+If the doubly linked list has only one node, what happens when you attempt to delete the node at the end?
+
+**Options:**
+1. Both `head` and `tail` are set to `None`.
+2. The node is removed, but the list remains unchanged.
+3. Only the `head` pointer is updated to `None`.
+4. An error is raised because the list has only one node.
+
+**Correct Answer:** 1. Both `head` and `tail` are set to `None`.
+
+---
+
+### **MCQ 6: After Deleting the Front Node**
+
+**Question:**  
+What should be done after deleting the front node in a doubly linked list?
+
+**Options:**
+1. The `head` pointer should point to the next node, and the `next` pointer of the new head should point to `None`.
+2. The `head` pointer should point to the next node, and the `prev` pointer of the new head should be set to `None`.
+3. The `next` pointer of the deleted node should be set to `None`.
+4. The list remains unchanged except for the node being deleted.
+
+**Correct Answer:** 2. The `head` pointer should point to the next node, and the `prev` pointer of the new head should be set to `None`.
+
+---
+
+### **MCQ 7: Deleting the Last Node in a Multi-Node List**
+
+**Question:**  
+When deleting the last node in a doubly linked list, what happens to the `tail` pointer?
+
+**Options:**
+1. The `tail` pointer points to the second-last node, and its `next` pointer is set to `None`.
+2. The `tail` pointer remains unchanged, and the list has no end.
+3. The `tail` pointer is deleted along with the last node.
+4. The `tail` pointer points to `None` after the last node is deleted.
+
+**Correct Answer:** 1. The `tail` pointer points to the second-last node, and its `next` pointer is set to `None`.
+
+---
+
+### **MCQ 8: Deleting Node at Front with Multiple Nodes**
+
+**Question:**  
+What happens when you delete the front node in a doubly linked list with multiple nodes?
+
+**Options:**
+1. The `head` pointer moves to the next node, and the new head’s `prev` pointer is set to `None`.
+2. The list becomes empty, and both `head` and `tail` are set to `None`.
+3. The list remains unchanged except for the removed front node.
+4. The `next` pointer of the old head is set to `None`.
+
+**Correct Answer:** 1. The `head` pointer moves to the next node, and the new head’s `prev` pointer is set to `None`.

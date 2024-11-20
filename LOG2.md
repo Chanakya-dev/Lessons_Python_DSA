@@ -860,3 +860,90 @@ def delete_end(self):
 - **4)** The head node is never deleted.
 Correct Answer:
 - **Answer** **2.** The new head is the next node, and the circular property is maintained.
+
+## Stack
+
+### 1) What happens if we try to push an element into a full stack implemented using an array?
+- **1)** The element is added at the top.
+- **2)** The stack is resized automatically.
+- **3)** A stack overflow error occurs.
+- **4)** The element is added to the bottom of the stack.
+**Answer:** 3. A stack overflow error occurs.
+
+### 2)Design and implement a Stack data structure in Python from scratch. Your stack should support the following operations:
+
+- **Push:** Add an element to the top of the stack.
+- **Pop:** Remove and return the top element of the stack.
+- **Peek/Top:** Return the top element without removing it.
+- **Is Empty:** Check if the stack is empty.
+- **Size:** Return the number of elements in the stack
+
+```python
+class Stack:
+    def __init__(self, size):
+        # Initialize an empty stack with a fixed size
+        self.arr = ___________________________
+        self.top = ___________________________
+        self.size = ___________________________
+
+    def push(self, val):
+        # Check for stack overflow
+        if ___________________________:
+            print("Stack Overflow!")
+        else:
+            ___________________________
+
+    def pop(self):
+        # Check for stack underflow
+        if ___________________________:
+            print("Stack Underflow!")
+            return ___________________________
+        else:
+            ___________________________
+
+    def peek(self):
+        # Check if stack is empty before peeking
+        if ___________________________:
+            print("Stack Is Empty!")
+            return ___________________________
+        return ___________________________
+
+    def is_empty(self):
+        return ___________________________
+
+    def size(self):
+        return ___________________________
+```
+## Queue
+
+### **1)** Implement a basic queue using arrays in Python and write functions for:
+- **enqueue:** Add an element at the end of the queue.
+- **dequeue:** Remove an element from the front of the queue.
+- **peek:** View the element at the front of the queue without removing it.
+- **is_empty:** Check if the queue is empty.
+
+```python  
+class Queue:
+    def __init__(self, size):
+        self.size = size
+        self.queue = [None] * size
+        self.front = 0
+        self.rear = -1
+        self.count = 0
+
+    # Add the methods here
+```
+
+### **2)** Which operation in a queue removes an element from the front?
+- **a)** Front
+- **b)** Rear
+- **c)** Dequeue
+- **d)** Peek
+**Answer:** c) Dequeue
+
+### **3)** What is the time complexity of the enqueue operation in a queue implemented using an array?
+- **a)** O(1)
+- **b)** O(n)
+- **c)** O(log n)
+- **d)** O(n^2)
+**Answer:** a) O(1)

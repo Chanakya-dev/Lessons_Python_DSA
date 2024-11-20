@@ -346,3 +346,110 @@ def delete_list(self):
 
 ---
 
+## Searching for Nodes
+
+---
+
+### Bug Fix: Searching for a Node
+
+### Problem Statement:
+The following `search` method contains issues:  
+1. It does not account for an empty linked list.  
+2. It assumes the node will always be found, leading to potential errors.
+
+```python
+def search(self, key):
+    current = self.head
+    while current.data != key:  # Bug: What happens if current is None?
+        current = current.next
+    return current
+```
+
+### Fixed Code:
+```python
+def search(self, key):
+    current = self.head
+    while current:
+        if current.data == key:
+            return current
+        current = current.next
+    return None  # Return None if the key is not found
+```
+
+---
+
+### MCQ: Searching for Nodes
+
+### Question 1:
+What is the time complexity of the `search` method in a singly linked list?
+
+#### Options:
+1. \( O(1) \)  
+2. \( O(\log n) \)  
+3. \( O(n) \)  
+4. \( O(n^2) \)  
+
+#### Correct Answer:
+3. \( O(n) \)
+
+---
+
+### Question 2:
+What happens if the `search` method is called with a key that is not in the linked list?
+
+#### Options:
+1. It returns the head of the list.  
+2. It returns the last node.  
+3. It traverses the entire list and returns `None`.  
+4. It throws an error.  
+
+#### Correct Answer:
+3. It traverses the entire list and returns `None`.
+
+---
+
+### Code Completion: Searching for a Node
+
+### Question:
+Complete the following code for the `search` method in a linked list:
+
+```python
+def search(self, key):
+    current = self.head
+    while ____________________________:
+        if ____________________________:
+            ____________________________
+        current = ____________________________
+    return ____________________________
+```
+
+### Answer:
+```python
+def search(self, key):
+    current = self.head
+    while current:
+        if current.data == key:
+            return current
+        current = current.next
+    return None
+```
+
+---
+
+### Code Writing Challenge: Finding a Node’s Position
+
+### Question:
+Write a method to return the position (0-based index) of the first occurrence of a given key in a linked list. Return `-1` if the key is not found.
+
+### Answer:
+```python
+def find_position(self, key):
+    current = self.head
+    position = 0
+    while current:
+        if current.data == key:
+            return position
+        current = current.next
+        position += 1
+    return -1  # Return -1 if the key is not found
+```

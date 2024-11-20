@@ -200,3 +200,149 @@ def insert_at_end(self, data):
         current = current.next
     current.next = new_node
 ```
+## Deleting Nodes
+
+### Bug Fix: Deleting a Node from Linked List
+
+### Problem Statement:
+The `delete_node` method below contains bugs that need to be fixed:  
+1. It doesn't handle the case where the list is empty (`self.head` is `None`).  
+2. It doesn't handle the case where the node to be deleted is the head node.
+
+```python
+def delete_node(self, key):
+    current = self.head
+    while current and current.data != key:
+        prev = current
+        current = current.next
+    prev.next = current.next  # Bug: What happens if current is None?
+```
+
+### Fixed Code:
+```python
+def delete_node(self, key):
+    if not self.head:  # Handle case where list is empty
+        print("List is empty")
+        return
+    
+    if self.head.data == key:  # Handle case where the head is the node to be deleted
+        self.head = self.head.next
+        return
+
+    current = self.head
+    prev = None
+    while current and current.data != key:
+        prev = current
+        current = current.next
+    
+    if not current:  # Node with the key doesn't exist
+        print("Key not found in the list")
+        return
+    
+    prev.next = current.next
+```
+
+---
+
+## MCQ: Deleting Nodes from Linked List
+
+### Question 1:
+What does the following code do?  
+
+```python
+if self.head.data == key:
+    self.head = self.head.next
+```
+
+#### Options:
+1. Deletes the tail of the linked list.  
+2. Deletes the first node with the given key if it is the head.  
+3. Deletes all nodes with the given key.  
+4. Does nothing if the key is not found.  
+
+#### Correct Answer:
+2. Deletes the first node with the given key if it is the head.
+
+---
+
+### Question 2:
+What happens if the `delete_node` method is called with a key that does not exist in the list?
+
+#### Options:
+1. It throws an error.  
+2. It deletes a random node.  
+3. It traverses the entire list but does not delete anything.  
+4. It resets the list to empty.  
+
+#### Correct Answer:
+3. It traverses the entire list but does not delete anything.
+
+---
+
+## Code Completion: Deleting a Node
+
+### Question:
+Complete the following code for the `delete_node` method in a linked list:
+
+```python
+def delete_node(self, key):
+    if not self.head:
+        ____________________________
+        return
+    
+    if self.head.data == key:
+        ____________________________
+        return
+    
+    current = self.head
+    prev = None
+    while ____________________________:
+        ____________________________
+    
+    if not current:
+        ____________________________
+        return
+    
+    ____________________________
+```
+
+### Answer:
+```python
+def delete_node(self, key):
+    if not self.head:
+        print("List is empty")
+        return
+    
+    if self.head.data == key:
+        self.head = self.head.next
+        return
+    
+    current = self.head
+    prev = None
+    while current and current.data != key:
+        prev = current
+        current = current.next
+    
+    if not current:
+        print("Key not found in the list")
+        return
+    
+    prev.next = current.next
+```
+
+---
+
+## Code Writing Challenge: Deleting the Entire Linked List
+
+### Question:
+Write a method to delete all nodes in a linked list.
+
+### Answer:
+```python
+def delete_list(self):
+    self.head = None
+    print("Linked list deleted")
+```
+
+---
+

@@ -734,9 +734,9 @@ def search(self, key):
     print("Not Found!")
 ```
 ### 3) What is the time complexity of searching for a node in a doubly linked list with n nodes?
-**1)** O(1)
-**2)** O(log n)
-**3)** O(n)
-**4)** O(n^2)
+- **1)** O(1)
+- **2)** O(log n)
+- **3)** O(n)
+- **4)** O(n^2)
 
 - **Answer:** 3. O(n)

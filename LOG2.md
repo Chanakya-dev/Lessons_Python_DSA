@@ -740,3 +740,123 @@ def search(self, key):
 - **4)** O(n^2)
 
 - **Answer:** 3. O(n)
+
+# Circular LinkedList
+
+## Insert at Front
+
+### **1)** Bug Fix (Incomplete Code) for Insert at End
+
+- Task:There is a bug in the following code. Identify and fix the issue in the insert_at_end function for a circular linked list.
+
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+// Fill it
+    while current.next:  # Bug: This should loop until current.next == self.head
+        current = current.next
+// Fill It
+    new_node.next = self.head  # Connect new node to head to maintain circular link
+```
+
+### **2)** What is the correct behavior of inserting at the front in a circular linked list?
+
+- 1) The new node is inserted at the head, and the head pointer is updated to point to it.
+- 2) The new node is inserted at the tail, and the tail pointer is updated to point to it.
+- 3) The new node is inserted at the front but does not update the tail pointer.
+- 4) The new node is inserted at the head, but the next pointer of the tail must be updated.
+
+- Correct Answer:
+- The new node is inserted at the head, and the head pointer is updated to point to it.
+
+## Insert at End 
+
+  ### **1)** Complete the function to insert a node at the end of a circular linked list.
+   ```python
+    def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        new_node.next = self.head  # Point the node to itself
+        return
+    current = self.head
+    while current.next != self.head:  # Traverse to the last node
+        current = current.next
+    # Complete the code to insert the new node at the end
+  ```
+
+### **2)** What is the correct behavior of inserting a node at the end of a circular linked list?
+
+- 1) Insert the new node after the last node and update the last node’s next pointer to point to the head.
+- 2) Insert the new node at the head of the list.
+- 3) The tail pointer should be updated to the new node, but the head pointer remains unchanged.
+- 4) The new node is inserted at the end, and its next pointer points to None.
+
+- Correct Answer:
+- Insert the new node after the last node and update the last node’s next pointer to point to the head.
+
+## Search Node in LinkedList
+
+### **1)** There is a bug in the following code. Identify and fix the issue in the search method for a circular linkedlist.
+
+```python
+def search(self, key):
+    if not self.head:
+        return False
+    current = self.head
+    while current.next != self.head:  # Bug: The condition is incorrect
+        if current.data == key:
+            return True
+        current = current.next
+    return False
+```
+### **2)** Complete the following function to search for an element in a circular linked list. The function should return True if the element is found and False if it is not.
+
+```python
+def search(self, key):
+    if not self.head:
+        return False
+    current = self.head
+    while current:  # Complete the loop condition to check all nodes
+        if current.data == key:
+            return True
+        current = current.next
+        # Complete the logic to break when we've circled back to the head
+    return False
+```
+### **3)** What is the time complexity of the search operation in a circular linked list?
+
+- **1)** O(1) because we can directly access any node.
+- **2)** O(n) because we may need to traverse the entire list.
+- **3)** O(log n) because the list is circular.
+- **4)** O(n^2) because it involves searching through each node twice.
+
+Correct Answer:
+- **2.** O(n) because we may need to traverse the entire list.
+
+## Delete a Node
+
+### 1) Complete the following function to delete a node at the end of the circular linked list. Ensure that the circular property is maintained after the node is deleted.
+
+```python
+def delete_end(self):
+    if not self.head:
+        return
+    current = self.head
+    prev = None
+    while current.next != self.head:  # Traverse until the second last node
+        current = current.next
+    # Complete the logic to delete the last node
+```
+
+### **2)** What happens when the head node is deleted in a circular linked list?
+
+- **1)** The list becomes empty.
+- **2)** The new head is the next node, and the circular property is maintained.
+- **3)** The list loses its circular structure.
+- **4)** The head node is never deleted.
+Correct Answer:
+- **2.** The new head is the next node, and the circular property is maintained.

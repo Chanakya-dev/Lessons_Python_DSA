@@ -453,8 +453,8 @@ def find_position(self, key):
         position += 1
     return -1  # Return -1 if the key is not found
 ```
-## Doubly Linked List
-# Insert at Front and Insert at End Operations Questions
+
+# Doubly Linked List
 
 ## Insert at Front Questions
 
@@ -502,9 +502,9 @@ def insert_at_front(self, data):
     self.head = new_node
     new_node.prev = None
 ```
-### 2) Insert at End
+### 1) Insert at End
 
-- **1) Problem:** Write the insert_at_end method to insert a new node at the end of the doubly linked list.
+- ** Problem:** Write the insert_at_end method to insert a new node at the end of the doubly linked list.
 
 ```python
 def insert_at_end(self, data):

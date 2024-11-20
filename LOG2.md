@@ -939,11 +939,11 @@ class Queue:
 - **b)** Rear
 - **c)** Dequeue
 - **d)** Peek
-**Answer:** c) Dequeue
+- **Answer:** c) Dequeue
 
 ### **3)** What is the time complexity of the enqueue operation in a queue implemented using an array?
 - **a)** O(1)
 - **b)** O(n)
 - **c)** O(log n)
 - **d)** O(n^2)
-**Answer:** a) O(1)
+- **Answer:** a) O(1)

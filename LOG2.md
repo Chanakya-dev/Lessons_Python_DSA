@@ -709,3 +709,33 @@ What happens when you delete the front node in a doubly linked list with multipl
 4. The `next` pointer of the old head is set to `None`.
 
 **Correct Answer:** 1. The `head` pointer moves to the next node, and the new head’s `prev` pointer is set to `None`.
+
+## Doubly LinkedList Search
+### 1) Complete the following function to search for a value in a doubly linked list.
+
+```python
+def search(self, key):
+    current = self.head
+    while current:
+        if current.data == key:
+            return True  # Return True if the element is found
+        current = current.next
+    return False  # Return False if the element is not found
+``` 
+### 2) There is a bug in the following code. Identify and fix the issue in the search function.
+
+```python
+def search(self, key):
+    current = self.head
+    while current:
+        if current.data == key:
+            print("Found!")
+        current = current.next
+    print("Not Found!")
+```
+### 3) What is the time complexity of searching for a node in a doubly linked list with n nodes?
+O(1)
+O(log n)
+O(n)
+O(n^2)
+- **Answer:** 3. O(n)

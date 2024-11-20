@@ -142,3 +142,63 @@ class LinkedList:
 - d) O(n^2)
 
 **Answer:** a) O(1)
+# Bug Fix: `insert_at_end` Method
+
+## Insert at End
+
+### Problem Statement:
+1) The following `insert_at_end` method contains two bugs:  
+1. It does not handle the case when `self.head` is `None`.  
+2. It tries to assign `current.next` when `current` itself could be `None`.  
+
+### Code with Bugs:
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    current = self.head  # Bug: What happens if self.head is None?
+    while current and current.next:
+        current = current.next
+    current.next = new_node  # Bug: May throw an error if current is None
+```
+### Question:
+2) In the `insert_at_end` method, what is the purpose of the `while current.next:` loop?
+
+### Options:
+1. To find the head of the linked list.  
+2. To traverse the linked list until the last node.  
+3. To insert the new node in the middle of the list.  
+4. To check if the list is circular.  
+
+### Correct Answer:
+2. To traverse the linked list until the last node.
+
+---
+
+# Code Completion
+
+### Question:
+3) Complete the following code for the `insert_at_end` method:
+
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    current = self.head
+    while ____________________________:
+        ____________________________
+    ____________________________
+```
+Answer Snippet
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    current = self.head
+    while current.next:
+        current = current.next
+    current.next = new_node
+```

@@ -244,7 +244,7 @@ def delete_node(self, key):
 
 ---
 
-## MCQ: Deleting Nodes from Linked List
+### MCQ: Deleting Nodes from Linked List
 
 ### Question 1:
 What does the following code do?  

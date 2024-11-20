@@ -78,7 +78,8 @@
 - c) `arr = array('i', [1, 2, 3])` *(using the `array` module)*
 - d) All of the above
 
-**Answer:** d) All of the above
+- **Answer:** d) All of the above
+
 ---
 
 ### **9. What is the time complexity of searching for an element in a sorted array using binary search?**

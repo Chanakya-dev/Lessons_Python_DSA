@@ -453,3 +453,91 @@ def find_position(self, key):
         position += 1
     return -1  # Return -1 if the key is not found
 ```
+## Doubly Linked List
+# Insert at Front and Insert at End Operations Questions
+
+## Insert at Front Questions
+
+### 1. Basic Insert at Front
+**Problem:** Write the `insert_at_front` method to insert a new node at the front of the doubly linked list.
+
+```python
+def insert_at_front(self, data):
+    new_node = Node(data)
+    ____________________________
+```
+**Answer**
+---
+def insert_at_front(self, data):
+    new_node = Node(data)
+    new_node.next = self.head
+    if self.head:
+        self.head.prev = new_node
+    self.head = new_node
+
+### 2. Insert at Front with Empty List
+- **Problem:** What happens if you call insert_at_front on an empty list?
+
+**Answer:** The new node should be inserted and become the head of the list. No prev pointer update is needed if the list is empty.
+
+```python
+def insert_at_front(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    new_node.next = self.head
+    self.head.prev = new_node
+    self.head = new_node
+```
+### 3. Insert at Front with Multiple Nodes
+- **Problem:** Write a method to insert a new node at the front when the list already has several nodes. Make sure that the new node becomes the first node and its prev pointer is set to None.
+
+```python
+def insert_at_front(self, data):
+    new_node = Node(data)
+    new_node.next = self.head
+    if self.head:
+        self.head.prev = new_node
+    self.head = new_node
+    new_node.prev = None
+```
+### Insert at End
+
+- **1) Problem:** Write the insert_at_end method to insert a new node at the end of the doubly linked list.
+
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    ____________________________
+```
+### Insert at End in Empty List
+
+- **2) Problem:** What happens if you try to insert a node at the end of an empty list? How would you handle it?
+- **Answer:** When the list is empty, the new node should be inserted as the head of the list.
+```python
+def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    current = self.head
+    while current.next:
+        current = current.next
+    current.next = new_node
+    new_node.prev = current
+```
+### Insert at End with Multiple Nodes
+**3) Problem:** Write a method to insert a new node at the end when there are already multiple nodes in the doubly linked list.
+```python
+    def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    current = self.head
+    while current.next:
+        current = current.next
+    current.next = new_node
+    new_node.prev = current
+```
